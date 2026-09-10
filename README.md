@@ -30,7 +30,7 @@ A feature-rich addon for **Minecraft Transit Railway (MTR)** that allows you to 
 <a name="chinese"></a>
 ## 中文
 
-一个为 **Minecraft Transit Railway (MTR)** 设计的功能丰富的扩展模组，让您可以完全自定义电梯轿厢屏幕。告别单调的电梯！
+一个为 **Minecraft Transit Railway (MTR)** 设计的功能丰富的扩展模组，让您可以修改电梯轿厢屏幕。告别单调的电梯！
 
 ### 🌟 功能特性
 *   **屏幕染色：** 通过 **Hex代码** 或游戏内的 **颜色滑块** 更改电梯内部显示屏的字体颜色。
