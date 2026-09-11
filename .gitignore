@@ -1,5 +1,5 @@
 build/
-run/
 .gradle/
+run/
+logs/
 *.class
-local.properties
