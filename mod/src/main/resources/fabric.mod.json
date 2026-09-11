@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "mtrliftcolornew",
+  "version": "${version}",
+  "icon": "assets/mtrliftcolornew/textures/icon.png",
+  "name": "新·MTR电梯染色模组",
+  "description": "给 MTR 电梯轿厢内部屏幕染色，支持分梯配置（存档/mtrliftcolor/.../lift_configs/xx/），并提供电梯调色面板。支持单人、局域网与专用服务器（服务器与玩家都需安装本模组，配色由服务器保存并同步）。基于 MTR 4.0.3-4.0.4，Fabric 1.20.1。",
+  "authors": [
+    "xiao"
+  ],
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.xiao.mtrliftcolornew.MTRLiftColorMod"
+    ],
+    "client": [
+      "com.xiao.mtrliftcolornew.client.MTRLiftColorClient"
+    ],
+    "server": [
+      "com.xiao.mtrliftcolornew.MTRLiftColorServer"
+    ]
+  },
+  "mixins": [
+    "mtrliftcolornew.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*",
+    "mtr": ">=4.0.3"
+  }
+}
