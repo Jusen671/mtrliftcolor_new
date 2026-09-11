@@ -1,0 +1,29 @@
+name: unzip-mod
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '*.zip'
+permissions:
+  contents: write
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: extract
+        run: |
+          for z in *.zip; do
+            [ -e "$z" ] || continue
+            name="${z%.zip}"
+            mkdir -p "$name"
+            unzip -o "$z" -d "$name"
+            rm "$z"
+          done
+      - name: commit
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add -A
+          git commit -m "auto unzip zip" || echo "nothing"
+          git push
