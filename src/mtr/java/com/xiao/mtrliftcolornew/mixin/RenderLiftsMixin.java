@@ -1,3 +1,4 @@
+// Portions derived from MTR (MIT License), original copyright MTR developers       
 package com.xiao.mtrliftcolornew.mixin;
 
 import com.xiao.mtrliftcolornew.config.LiftColorConfig;
