@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "mtrliftcolor:block/lift_maintenance_barrier_45"
+    },
+    "facing=east": {
+      "model": "mtrliftcolor:block/lift_maintenance_barrier_45",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "mtrliftcolor:block/lift_maintenance_barrier_45",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mtrliftcolor:block/lift_maintenance_barrier_45",
+      "y": 270
+    }
+  }
+}
